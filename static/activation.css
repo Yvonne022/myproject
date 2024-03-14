@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=ais');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make sure container is centered in the viewport */
+}
+
+.container {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=ais');
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.activation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightpink;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d3d3d3;
+}
+
+.response {
+    margin-top: 20px;
+    text-align: center;
+}

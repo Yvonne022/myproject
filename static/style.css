@@ -1,0 +1,126 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=ais'); 
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    padding: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: hotpink;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* Adjust the border-radius to make the corners rounded */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #d3d3d3; /* Change the background color on hover */
+}
+
+
+
+/* Popup modal container */
+#popup-modal {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=ais');
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Yes and No buttons */
+#yes-button,
+#no-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: hotpink;
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#yes-button:hover,
+#no-button:hover {
+    background-color: #dfdfdf;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<title>User Registration Form</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Welcome to our dating service with 6000 potential dating partners!</h1>
+
+<form id="registration" autocomplete="on">
+
+<fieldset>
+<legend>Personal Details</legend> 
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" autocomplete="name" required>
+
+<label for="age">Age:</label>  
+<input type="number" id="age" name="age" autocomplete="age" required>
+  
+<label for="gender">Gender:</label>
+<select id="gender" name="gender" autocomplete="sex" required>
+<option value="">Select Gender</option>
+<option value="male">Male</option> 
+<option value="female">Female</option>
+</select>
+
+<label for="contact_number">Contact Number:</label>
+<input type="tel" id="contact_number" name="contact_number" autocomplete="tel" required>
+
+</fieldset>
+
+<fieldset>
+  
+<legend>Location</legend>
+  
+<label for="county">County:</label>
+<input type="text" id="county" name="county" autocomplete="address-level1" required>
+  
+<label for="town">Town:</label>
+<input type="text" id="town" name="town" autocomplete="address-level2" required>
+
+</fieldset>
+
+<fieldset id="additional-details-section" style="display: none;">
+    <legend>Additional Details (Optional)</legend>
+    <label for="education">Level of Education:</label>
+    <input type="text" id="education" name="education">
+
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" name="profession">
+
+    <label for="marital_status">Marital Status:</label>
+    <select id="marital_status" name="marital_status">
+        <option value="">Select Marital Status</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="divorced">Divorced</option>
+    </select>
+
+    <label for="religion">Religion:</label>
+    <select id="religion" name="religion">
+        <option value="">Select Religion</option>
+        <option value="christianity">Christianity</option>
+        <option value="islam">Islam</option>
+        <option value="hinduism">Hinduism</option>
+        <option value="buddhism">Buddhism</option>
+        <option value="other">Other</option>
+    <label for="ethnicity">Ethnicity:</label>
+    <input type="text" id="ethnicity" name="ethnicity">
+</fieldset>
+
+<fieldset id="self-description-section" style="display: none;">
+    <legend>Self Description</legend>
+    </select>
+
+    <label for="self_description">Self Description:</label>
+    <input type="text" id="self_description" name="self_description">
+</fieldset>
+
+
+<input type="submit" value="Register">
+
+</form>
+
+<div id="popup-modal" style="display: none;">
+    <div id="response-text"></div>
+    <button id="yes-button">Yes</button>
+    <button id="no-button">No</button>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

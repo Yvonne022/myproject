@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=ais");
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    background-image: url('https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709424000&semt=ais');
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: hotpink;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d3d3d3;
+}

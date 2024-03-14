@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Find Your Match</title>
+    <link rel="stylesheet" href="/static/match.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Match</h1>
+
+        <form id="matching" autocomplete="on" data-user-id="{{ user_id }}">
+            <label for="age">Age Range:</label>  
+            <input type="text" id="ageRange" name="ageRange" placeholder="e.g., 25-30" required>
+            
+            <label for="town">Town:</label>
+            <input type="text" id="town" name="town" autocomplete="address-level2" required>
+
+            <input type="submit" value="Search">
+        </form>
+
+        <div id="match-response">
+            <!-- Match results will be displayed here -->
+        </div>
+    </div>
+
+    <div id="userDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="userDetailsContainer">
+                <!-- User details will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/matching_script.js"></script>
+</body>
+</html>
